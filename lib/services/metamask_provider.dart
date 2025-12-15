@@ -47,6 +47,11 @@ class MetaMaskProvider extends ChangeNotifier {
     notifyListeners();
   }
 
+  void disconnect() {
+    currentAddress = null;
+    notifyListeners();
+  }
+
   Future<BigInt?> getBalance() async {
     if (!isEnabled || !isConnected) return null;
     final signer = web3!.getSigner();
