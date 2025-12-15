@@ -1,0 +1,23 @@
+name: riverbit_flutter
+description: RiverBit Web3 Flutter app
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.0.0
+  flutter_web3: ^2.1.6
+  ethers: any
+  tailwind: any
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
