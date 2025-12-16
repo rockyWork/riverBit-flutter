@@ -6,7 +6,8 @@
     <meta name="description" content="RiverBit Web3 Flutter app" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RiverBit Web3</title>
-    <script src="https://cdn.ethers.io/lib/ethers-5.4.umd.min.js" type="application/javascript"></script>
+    <!-- 统一使用官方推荐的 ethers.js UMD 构建，必须在 flutter.js 之前加载 -->
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js" type="application/javascript"></script>
     <script src="https://cdn.jsdelivr.net/npm/@walletconnect/web3-provider@1.6.5/dist/umd/index.min.js" type="application/javascript"></script>
     <base href="/" />
   </head>
